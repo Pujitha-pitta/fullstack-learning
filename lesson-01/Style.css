@@ -1,33 +1,46 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: lightgray;
+    background-color: #f5f7fa;
+    color: #222;
     margin: 0;
-    padding: 0 40px;
+    padding: 0;
+    line-height: 1.6;
 }
 
+/* Main content width */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    padding: 25px 0;
+    text-align: right;
+    border-bottom: 1px solid #475569;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+/* Headings */
 h1 {
     color: darkblue;
 }
 
 h2 {
     color: darkgreen;
-}section {
-    padding: 60px 0;
 }
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-nav {
-    padding: 25px 0;
-    text-align: right;
-    border-bottom: 1px solid #475569;
-}
-nav a {
-    color: #e2e8f0;
-    text-decoration: none;
-    margin-left: 25px;
-}
+
+/* Hero section */
 .hero {
     padding: 100px 0;
 }
@@ -36,14 +49,7 @@ nav a {
     font-size: 70px;
     margin: 10px 0;
 }
+
 .hero p {
     font-size: 20px;
-}
-section {
-    padding: 60px 0;
-}
-
-main {
-    max-width: 1000px;
-    margin: 0 auto;
 }
