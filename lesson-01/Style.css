@@ -28,4 +28,22 @@ nav a {
     text-decoration: none;
     margin-left: 25px;
 }
+.hero {
+    padding: 100px 0;
+}
 
+.hero h1 {
+    font-size: 70px;
+    margin: 10px 0;
+}
+.hero p {
+    font-size: 20px;
+}
+section {
+    padding: 60px 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
