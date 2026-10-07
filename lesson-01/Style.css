@@ -11,4 +11,21 @@ h1 {
 
 h2 {
     color: darkgreen;
+}section {
+    padding: 60px 0;
 }
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+nav {
+    padding: 25px 0;
+    text-align: right;
+    border-bottom: 1px solid #475569;
+}
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
