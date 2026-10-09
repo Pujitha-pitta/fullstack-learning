@@ -14,17 +14,23 @@ main {
 }
 
 /* Navigation */
+
 nav {
-    padding: 25px 0;
+    padding: 20px 40px;
     text-align: right;
-    border-bottom: 1px solid #475569;
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
 }
 
+
 nav a {
-    color: #222;
+    color: #334155;
     text-decoration: none;
     margin-left: 25px;
+    font-size: 15px;
+    font-weight: bold;
 }
+
 
 /* Sections */
 section {
@@ -36,20 +42,77 @@ h1 {
     color: darkblue;
 }
 
+
 h2 {
-    color: darkgreen;
+    color: #1e293b;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 750px;
+    color: #475569;
+    font-size: 17px;
 }
 
 /* Hero section */
+
 .hero {
     padding: 100px 0;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 .hero h1 {
     font-size: 70px;
+    color: #2563eb;
     margin: 10px 0;
+    line-height: 1.1;
 }
+
 
 .hero p {
     font-size: 20px;
+    color: #475569;
 }
+
+h3 {
+    color: #334155;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+section ul,
+section ol {
+    padding-left: 25px;
+    color: #475569;
+}
+
+.projects h3 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #e2e8f0;
+}
+
+.projects h3 + p {
+    background-color: white;
+    padding: 0 20px 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+
+section li {
+    margin-bottom: 8px;
+}
+
