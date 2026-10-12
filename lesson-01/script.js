@@ -6,3 +6,22 @@ function showMessage() {
 }
 
 button.addEventListener("click", showMessage);
+
+
+const projects = [
+    "Technical Debt in Requirements Engineering",
+    "Deployment of Multi-Tier Web Application in AWS Cloud",
+    "Threat Modelling and Risk Analysis for LLM-Based Architecture",
+    "Text2Image Mobile Application",
+    "Software Maintainability and Quality Analysis Using GQM Framework",
+    "EV Charging Optimization Using Intelligent Predictive Decision Support",
+    "Intelligent Decision Support System for Cryptocurrency Price Prediction",
+    "Indian Stock Market Trend Analysis Using CRISP-DM",
+    "Accident Severity Prediction Using Weather and Road Infrastructure Data",
+    "Wine Quality Classification Using Machine Learning",
+    "Spam Detection Using Supervised Learning Algorithms"
+];
+
+for (let i = 0; i < projects.length; i++) {
+    console.log(projects[i]);
+}
