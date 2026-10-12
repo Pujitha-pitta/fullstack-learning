@@ -1,7 +1,12 @@
+
 const button = document.getElementById("contactButton");
 const message = document.getElementById("message");
 
-const visitorMessage = "Hello! Thanks for exploring my projects.";
+let clickCount = 0;
+
 button.addEventListener("click", function () {
-    message.textContent = visitorMessage;
+    clickCount = clickCount + 1;
+
+    message.textContent =
+        "You clicked Contact Me " + clickCount + " times!";
 });
