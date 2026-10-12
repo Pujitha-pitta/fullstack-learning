@@ -8,6 +8,7 @@ function showMessage() {
 button.addEventListener("click", showMessage);
 
 
+
 const projects = [
     "Technical Debt in Requirements Engineering",
     "Deployment of Multi-Tier Web Application in AWS Cloud",
@@ -22,6 +23,10 @@ const projects = [
     "Spam Detection Using Supervised Learning Algorithms"
 ];
 
+const projectList = document.getElementById("projectList");
+
 for (let i = 0; i < projects.length; i++) {
-    console.log(projects[i]);
+    const project = document.createElement("p");
+    project.textContent = projects[i];
+    projectList.appendChild(project);
 }
