@@ -7,7 +7,6 @@ function showMessage() {
 
 button.addEventListener("click", showMessage);
 
-
 const projects = [
     "Technical Debt in Requirements Engineering",
     "Deployment of Multi-Tier Web Application in AWS Cloud",
@@ -25,7 +24,12 @@ const projects = [
 const projectList = document.getElementById("projectList");
 
 for (let i = 0; i < projects.length; i++) {
-    const project = document.createElement("p");
-    project.textContent = projects[i];
-    projectList.appendChild(project);
+    const card = document.createElement("div");
+    const title = document.createElement("h3");
+
+    title.textContent = projects[i];
+    card.appendChild(title);
+
+    card.className = "project-card";
+    projectList.appendChild(card);
 }
