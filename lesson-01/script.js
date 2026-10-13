@@ -8,7 +8,6 @@ function showMessage() {
 button.addEventListener("click", showMessage);
 
 
-
 const projects = [
     "Technical Debt in Requirements Engineering",
     "Deployment of Multi-Tier Web Application in AWS Cloud",
