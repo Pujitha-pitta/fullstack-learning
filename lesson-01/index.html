@@ -4,256 +4,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Naga Pujitha Pitta, Computer Science graduate and software developer.">
+    <meta name="description" content="Naga Pujitha Pitta's software development and AI portfolio">
     <title>Pujitha Portfolio</title>
     <link rel="stylesheet" href="Style.css">
 </head>
-
 <body>
 
-    <!-- Floating background shapes -->
+    <!-- Animated background -->
     <div class="background-shapes" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
     </div>
+
+    <!-- Glowing cursor -->
+    <div class="glow-cursor" aria-hidden="true"></div>
 
     <!-- Header -->
     <header class="hero" id="home">
-        <p class="hero-label">WELCOME TO MY PORTFOLIO</p>
-
         <h1>Naga Pujitha Pitta</h1>
-
         <p class="hero-subtitle">
-            I am a <span id="roleText">Software Developer</span>
-            <span class="cursor">|</span>
-        </p>
-
-        <p class="hero-description">
-            Building useful applications, exploring AI, and learning through projects.
+            <span id="roleText">Software Developer</span><span class="typing-cursor">|</span>
         </p>
     </header>
 
     <!-- Navigation -->
     <nav>
         <a href="#home">Home</a>
+        <span class="nav-dot">•</span>
         <a href="#experience">Experience</a>
+        <span class="nav-dot">•</span>
         <a href="#projects">Projects</a>
+        <span class="nav-dot">•</span>
         <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
     </nav>
 
     <main>
 
         <!-- About -->
-        <section class="intro section" id="about">
-
-            <div class="profile-photo-container">
+        <section class="about section" id="about">
+            <div class="about-heading">
                 <img
-                    src="images/profile.jpeg"
-                    alt="Profile photo of Naga Pujitha Pitta"
                     class="profile-photo"
+                    src="images/profile.jpeg"
+                    alt="Naga Pujitha Pitta"
                 >
-            </div>
-
-            <div class="intro-content">
-                <p class="section-label">01 / ABOUT ME</p>
-                <h2>Hello, I'm Pujitha.</h2>
-
-                <p>
-                    I am a Computer Science graduate with an interest in
-                    full-stack development, artificial intelligence, and
-                    machine learning. I enjoy solving problems, building
-                    practical applications, and learning new technologies.
-                </p>
-
-                <p>
-                    My experience includes developing web applications,
-                    working with cloud technologies, and researching
-                    reliable machine learning models.
-                </p>
-
-                <div class="social-links">
-                    <a href="https://github.com/Pujitha-pitta"
-                       target="_blank" rel="noopener noreferrer">
-                        GitHub ↗
-                    </a>
-
-                    <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
-                       target="_blank" rel="noopener noreferrer">
-                        LinkedIn ↗
-                    </a>
-
-                    <a href="mailto:nagapujitha456@gmail.com">
-                        Email ↗
-                    </a>
+                <div>
+                    <h2>Hey — I'm Pujitha.</h2>
+                    <p>
+                        I am a Computer Science graduate from
+                        Blekinge Institute of Technology, Sweden.
+                    </p>
                 </div>
             </div>
-        </section>
 
-        <!-- Education -->
-        <section class="section" id="education">
-            <p class="section-label">02 / EDUCATION</p>
-            <h2>Education</h2>
+            <p>
+                I am interested in full-stack development, artificial
+                intelligence, and machine learning. I enjoy building
+                applications, solving technical problems, and learning
+                new technologies.
+            </p>
 
-            <article class="info-card">
-                <h3>Master of Science in Computer Science</h3>
-                <p class="muted">Blekinge Institute of Technology · Sweden</p>
-                <p>
-                    Focus areas include machine learning, software
-                    development, distributed systems, and computer science.
-                </p>
-            </article>
-        </section>
+            <p>
+                My work includes cloud-based web applications,
+                machine learning projects, and research into reliable
+                federated learning models.
+            </p>
 
-        <!-- Skills -->
-        <section class="section" id="skills">
-            <p class="section-label">03 / TOOLKIT</p>
-            <h2>Technical Skills</h2>
+            <p class="social-links">
+                <a href="mailto:nagapujitha456@gmail.com">Email</a>
+                <span>·</span>
+                <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
+                   target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <span>·</span>
+                <a href="https://github.com/Pujitha-pitta"
+                   target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
 
-            <div class="skills-list">
-                <span>Python</span>
-                <span>Java</span>
-                <span>JavaScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>SQL</span>
-                <span>Flask</span>
-                <span>Scikit-learn</span>
-                <span>TensorFlow</span>
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>AWS</span>
-                <span>GitHub</span>
-            </div>
+            <hr>
+
+            <h3>Education</h3>
+            <p>
+                <strong>Master of Science in Computer Science</strong><br>
+                Blekinge Institute of Technology · Sweden
+            </p>
+
+            <hr>
+
+            <h3>Technical Skills</h3>
+            <p>
+                Python · Java · JavaScript · HTML · CSS · SQL · Flask ·
+                Scikit-learn · TensorFlow · Pandas · NumPy · AWS
+            </p>
         </section>
 
         <!-- Experience -->
         <section class="section" id="experience">
-            <p class="section-label">04 / EXPERIENCE</p>
             <h2>Experience</h2>
 
+            <p class="resume-link">
+                <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+                    View résumé ↗
+                </a>
+            </p>
+
             <div class="timeline">
-
                 <article class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    <div>
-                        <p class="timeline-date">July – August 2026</p>
-                        <h3>AI Intern</h3>
-                        <p class="muted">FLY Rank AI · Sweden</p>
-                        <p>
-                            Worked on AI-related tasks and explored
-                            practical approaches to data-driven problems.
-                        </p>
-                    </div>
+                    <h3>AI Intern</h3>
+                    <p class="timeline-meta">FLY Rank AI · Sweden</p>
+                    <p class="timeline-date">July 2026 – August 2026</p>
                 </article>
 
                 <article class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    <div>
-                        <p class="timeline-date">May – June 2023</p>
-                        <h3>Python Programming Intern</h3>
-                        <p class="muted">AICTE</p>
-                        <p>
-                            Developed Python programming skills through
-                            practical exercises and technical tasks.
-                        </p>
-                    </div>
+                    <h3>Python Programming Intern</h3>
+                    <p class="timeline-meta">AICTE</p>
+                    <p class="timeline-date">May 2023 – June 2023</p>
                 </article>
-
             </div>
+
+            <p class="section-bottom-link">
+                <a href="#projects">〈 My Projects 〉</a>
+            </p>
         </section>
 
         <!-- Projects -->
         <section class="section" id="projects">
-            <p class="section-label">05 / SELECTED WORK</p>
-            <h2>Projects</h2>
-
-            <p class="section-description">
-                A selection of my work in machine learning,
-                cloud computing, software engineering, and AI.
+            <h2>My Projects</h2>
+            <p class="section-intro">
+                Selected work in software engineering, cloud computing,
+                artificial intelligence, and machine learning.
             </p>
 
-            <!-- JavaScript inserts the project cards here -->
-            <div id="projectList" class="project-list"></div>
+            <!-- JavaScript adds all project entries here -->
+            <div id="projectList" class="project-list">
+                <p>Loading projects...</p>
+            </div>
+
+            <p class="section-bottom-link">
+                <a href="#publications">〈 My Publications 〉</a>
+            </p>
         </section>
 
         <!-- Publications -->
         <section class="section" id="publications">
-            <p class="section-label">06 / RESEARCH</p>
             <h2>Publications</h2>
 
-            <div class="publication-list">
+            <article class="publication-item">
+                <h3>
+                    A Federated Learning Approach for Reliable Diabetes Prediction
+                </h3>
+                <p>
+                    Comparative analysis of machine learning and deep learning
+                    models with probability calibration.
+                </p>
+                <a href="Diabetes%20Prediction.pdf"
+                   target="_blank" rel="noopener noreferrer">
+                    View research PDF ↗
+                </a>
+            </article>
 
-                <article class="publication-card">
-                    <span class="publication-number">01</span>
-
-                    <div class="publication-content">
-                        <h3>
-                            A Federated Learning Approach for Reliable
-                            Diabetes Prediction
-                        </h3>
-
-                        <p>
-                            Comparative analysis of machine learning and
-                            deep learning models with probability calibration.
-                        </p>
-
-                        <a href="Diabetes%20Prediction.pdf"
-                           target="_blank" rel="noopener noreferrer">
-                            View research document ↗
-                        </a>
-                    </div>
-                </article>
-
-                <article class="publication-card">
-                    <span class="publication-number">02</span>
-
-                    <div class="publication-content">
-                        <h3>
-                            Analyzing Rule-Based Models in Personal Loan
-                            Credit Scoring
-                        </h3>
-
-                        <p>
-                            Research on rule-based approaches for
-                            personal loan credit scoring.
-                        </p>
-
-                        <a href="pdfs/Analyzing%20Rule-Based%20Models%20in%20Personal%20Loan%20Credit%20Scoring.pdf"
-                           target="_blank" rel="noopener noreferrer">
-                            View research document ↗
-                        </a>
-                    </div>
-                </article>
-
-            </div>
+            <article class="publication-item">
+                <h3>
+                    Analyzing Rule-Based Models in Personal Loan Credit Scoring
+                </h3>
+                <p>
+                    Research on rule-based models for personal loan credit scoring.
+                </p>
+                <a href="pdfs/Analyzing%20Rule-Based%20Models%20in%20Personal%20Loan%20Credit%20Scoring.pdf"
+                   target="_blank" rel="noopener noreferrer">
+                    View research PDF ↗
+                </a>
+            </article>
         </section>
 
         <!-- Contact -->
-        <section class="section contact-section" id="contact">
-            <p class="section-label">07 / GET IN TOUCH</p>
-            <h2>Let's connect.</h2>
-
+        <section class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to contact me about software development, AI, or collaboration.</p>
             <p>
-                Interested in software development, AI, or collaboration?
-                Feel free to reach out.
+                <a href="mailto:nagapujitha456@gmail.com">
+                    nagapujitha456@gmail.com
+                </a>
             </p>
-
-            <a class="contact-button"
-               href="mailto:nagapujitha456@gmail.com">
-                Contact Me ↗
-            </a>
         </section>
 
     </main>
 
     <footer>
         <p>© <span id="currentYear"></span> Naga Pujitha Pitta</p>
-        <p>Designed and built with HTML, CSS and JavaScript.</p>
     </footer>
 
     <script src="script.js"></script>
