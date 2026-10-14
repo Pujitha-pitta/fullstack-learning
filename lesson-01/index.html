@@ -1,213 +1,127 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <meta name="theme-color" content="#192127">
+    <title>Pujitha Pitta | Software Developer</title>
     <link rel="stylesheet" href="Style.css">
 </head>
-
 <body>
-    <nav>
-       <a href="#about">About</a>
-       <a href="#education">Education</a>
-       <a href="#experience">Experience</a>
-       <a href="#publications">Publications</a>
-       <a href="#skills">Technical Skills</a>
-       <a href="#projects">My Projects</a>
-       <a href="#contact">Contact</a>
-    </nav>
-<main>
-    <section class="hero">
 
-    <p>Hello, I'm</p>
+    <div class="background-shapes" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
 
-    <h1>Pujitha Pitta</h1>
+    <header class="hero" id="home">
+        <h1>Naga Pujitha Pitta</h1>
+        <p class="typing"><span id="roleText">Software Developer</span><span class="cursor">|</span></p>
 
-    <p>Computer Science Graduate</p>
+        <nav>
+            <a href="#home">Home</a>
+            <span>•</span>
+            <a href="#experience">Experience</a>
+            <span>•</span>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
 
-</section>
-<section id="about">
-    <h2>About Me</h2>
+    <main>
+        <section class="intro">
+            <h2>Hey — I'm Pujitha.</h2>
 
-    <p>
-        Recent Computer Science graduate with a strong foundation in
-        software development, machine learning, cloud computing,
-        and data analysis.
-    </p>
-</section>
-<section id="education">
-    <h2>Education</h2>
+            <p>
+                I'm a Computer Science graduate interested in building
+                useful software, full-stack web applications, and AI-powered
+                solutions.
+            </p>
 
-    <ol>
-        <li>Master's Degree in Computer Science</li>
-        <li>Blekinge Institute of Technology, Sweden</li>
-    </ol>
-</section>
-    <section id="experience">
+            <p>
+                I have experience working with Python, machine learning,
+                cloud technologies, and software development. I'm currently
+                growing my skills in full-stack development.
+            </p>
 
-    <h2>Experience</h2>
+            <p>
+                I enjoy learning new technologies, solving problems,
+                and turning ideas into practical projects.
+            </p>
 
-    <h3>AI Intern - FLY Rank AI</h3>
+            <div class="education">
+                <h3>Education</h3>
+                <p><strong>Master's in Computer Science</strong><br>
+                Blekinge Institute of Technology, Sweden</p>
+            </div>
 
-    <ul>
-        <li>Developed Python applications for predictive analytics and intelligent data processing.</li>
-        <li>Built and evaluated Scikit-learn machine learning models.</li>
-        <li>Applied feature engineering and preprocessing techniques to improve model performance.</li>
-    </ul>
+            <hr>
 
+            <div class="social-links">
+                <a href="mailto:nagapujitha456@gmail.com">Email</a>
+                <span>·</span>
+                <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
+                   target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <span>·</span>
+                <a href="https://github.com/Pujitha-pitta"
+                   target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
 
-    <h3>Python Programming Intern - AICTE</h3>
+            <hr>
 
-    <ul>
-        <li>Completed an internship in Python programming, developing foundational skills in scripting and automation.</li>
-    </ul>
+            <a class="next-link" href="#experience">〈 My Experience 〉</a>
+        </section>
 
-</section>
-    <section id="publications">
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <p class="section-subtitle">My professional journey</p>
 
-    <h2>Publications</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <h3>AI Intern</h3>
+                    <p class="company">FLY Rank AI · Sweden</p>
+                    <p>Worked on AI-related tasks and technical projects.</p>
+                    <p class="date">July 2026 – August 2026</p>
+                </article>
 
-    <h3>
-        A Federated Learning Approach for Reliable Diabetes Prediction
-    </h3>
+                <article class="timeline-item">
+                    <h3>Python Programming Intern</h3>
+                    <p class="company">AICTE</p>
+                    <p>Developed programming skills using Python.</p>
+                    <p class="date">May 2023 – June 2023</p>
+                </article>
+            </div>
 
-    <p>
-        Comparative Analysis of Machine Learning and Deep Learning
-        Models with Probability Calibration
-    </p>
+            <hr>
 
-    <ul>
-        <li>
-            Investigated reliable diabetes prediction using federated learning
-            and comparative evaluation of machine learning and deep learning models.
-        </li>
+            <a class="next-link" href="#projects">〈 My Projects 〉</a>
+        </section>
 
-        <li>
-            Evaluated centralized, local-only, and federated training
-            under IID and non-IID data distributions.
-        </li>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p class="section-subtitle">
+                A selection of my academic and technical work
+            </p>
 
-        <li>
-            Investigated probability calibration using sigmoid and isotonic
-            calibration to improve prediction reliability.
-        </li>
+            <div id="projectList" class="project-list"></div>
 
-        <li>
-            Applied SHAP-based explainability to assess model explanation consistency.
-        </li>
-    </ul>
+            <hr>
 
-
-    <h3>
-        Analyzing Rule-Based Models in Personal Loan Credit Scoring
-    </h3>
-
-    <ul>
-        <li>
-            Compared RIPPER and CN2 algorithms for personal loan credit scoring
-            using accuracy, precision, recall, and F1-score.
-        </li>
-
-        <li>
-            Evaluated the effectiveness of rule-based models for financial
-            risk assessment.
-        </li>
-    </ul>
-
-</section>
-<section id="skills">
-
-    <h2>Technical Skills</h2>
-
-    <h3>Programming</h3>
-    <p>
-        C++, C, Java, SQL, Python, R
-    </p>
-
-    <h3>Machine Learning & AI</h3>
-    <p>
-        Machine Learning, Deep Learning, Scikit-learn,
-        Keras, TensorFlow, NLP
-    </p>
-
-    <h3>Data Analysis</h3>
-    <p>
-        Pandas, NumPy, Matplotlib, Seaborn
-    </p>
-
-    <h3>Cloud</h3>
-    <p>
-        AWS EC2, AWS RDS, AWS S3
-    </p>
-
-    <h3>Other Skills</h3>
-    <p>
-        Communication, Team Management, Technical Writing
-    </p>
-
-</section>
-
-    <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div id="projectList"></div>
-
-</section>
-   <section id="contact">
-
-    <h2>Contact</h2>
-
-    <p>
-        Email:
-        <a href="mailto:nagapujitha456@gmail.com">
-            nagapujitha456@gmail.com
-        </a>
-    </p>
-
-    <p>
-        Phone:
-        <a href="tel:+46768956076">
-            +46 768 956 076
-        </a>
-    </p>
-
-    <p>
-        LinkedIn:
-        <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
-           target="_blank">
-            LinkedIn Profile
-        </a>
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/Pujitha-pitta"
-           target="_blank">
-            GitHub Profile
-        </a>
-    </p>
-       
-<button id="contactButton">Contact Me</button>
-
-<p id="message"></p>
-
-       
-
-</section>
+            <a class="next-link" href="#home">〈 Back to Home 〉</a>
+        </section>
     </main>
-    
-<footer>
-    <p>© 2026 Pujitha Pitta. All rights reserved.</p>
 
-    <p>
-        Built with HTML and CSS.
-    </p>
+    <footer>
+        <p>Designed and developed by Pujitha Pitta</p>
+        <p>
+            <a href="https://github.com/Pujitha-pitta"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+            ·
+            <a href="mailto:nagapujitha456@gmail.com">Email</a>
+        </p>
+    </footer>
 
-    <a href="https://github.com/Pujitha-pitta" target="_blank">
-        Visit my GitHub
-    </a>
-</footer>
     <script src="script.js"></script>
-
 </body>
 </html>
