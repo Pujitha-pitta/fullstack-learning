@@ -18,7 +18,7 @@ const projects = [
     {
         title: "Multi-Tier Web Application in AWS Cloud",
         description: "Deployed a multi-tier web application using AWS.",
-        link: "pdfs/Multi-Tier%20Web%20Application%20in%20AWS%20Cloud.pdf"
+        link: "pdfs/Deployment%20of%20Multi-Tier%20Web%20Application%20in%20AWS%20Cloud.pdf"
     },
     
 {
