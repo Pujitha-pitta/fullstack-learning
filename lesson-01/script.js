@@ -20,12 +20,22 @@ const projects = [
         description: "Deployed a multi-tier web application using AWS.",
         link: "pdfs/Multi-Tier%20Web%20Application%20in%20AWS%20Cloud.pdf"
     },
-    {
-        title: "Threat Modelling and Risk Analysis for LLM-Based Architecture",
-        description: "Analysed security threats and risks in an LLM-based architecture.",
-        link: "pdfs/Threat%20Modelling%20and%20Risk%20Analysis%20for%20LLM-Based%20Architecture.htm",
-        link: "pdfs/Threat%20Modelling%20and%20Risk%20Analysis%20for%20LLM-Based%20Architecture.xlsx"
-    },
+    
+{
+    title: "Threat Modelling and Risk Analysis for LLM-Based Architecture",
+    description: "Analysed security threats and risks in an LLM-based architecture.",
+    links: [
+        {
+            label: "View HTML Report",
+            url: "pdfs/Threat%20Modelling%20and%20Risk%20Analysis%20for%20LLM-Based%20Architecture.htm"
+        },
+        {
+            label: "Open Spreadsheet",
+            url: "pdfs/Threat%20Modelling%20and%20Risk%20Analysis%20for%20LLM-Based%20Architecture.xlsx"
+        }
+    ]
+},
+
     {
         title: "Text2Image Mobile Application",
         description: "Developed an AI-based mobile application.",
