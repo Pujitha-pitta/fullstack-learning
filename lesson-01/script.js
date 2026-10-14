@@ -1,5 +1,5 @@
 
-// ---------- Animated job titles ----------
+// ---------- Animated job title ----------
 
 const roles = [
     "Software Developer",
@@ -21,118 +21,104 @@ function changeRole() {
 setInterval(changeRole, 2500);
 
 
-// ---------- Project information ----------
-// Update a filePath to match the exact filename in your GitHub folder.
+// ---------- Project list ----------
+// File paths must match the actual names in your GitHub repository.
 
 const projects = [
     {
         title: "Federated Learning for Diabetes Prediction",
         description:
-            "Compared centralized and federated machine learning models, with probability calibration and SHAP explainability.",
+            "Compared centralized and federated learning models and investigated probability calibration and SHAP explainability.",
         tags: ["Python", "Machine Learning", "Federated Learning"],
-        filePath: "Diabetes%20Prediction.pdf",
-        linkText: "View research ↗"
+        file: "Diabetes%20Prediction.pdf"
     },
     {
         title: "Technical Debt in Requirements Engineering",
         description:
-            "Explored technical debt in requirements engineering and its implications for software quality.",
+            "Investigated technical debt in requirements engineering and its impact on software development.",
         tags: ["Software Engineering", "Research"],
-        filePath:
-            "pdfs/Technical%20Debt%20in%20Requirements%20Engineering.pdf",
-        linkText: "View project ↗"
+        file: "pdfs/Technical%20Debt%20in%20Requirements%20Engineering.pdf"
     },
     {
         title: "Multi-Tier Web Application in AWS Cloud",
         description:
-            "Developed a multi-tier web application using cloud services and explored application deployment in AWS.",
-        tags: ["AWS", "Cloud Computing", "Web Development"],
-        filePath:
-            "pdfs/Deployment%20of%20Multi-Tier%20Web%20Application%20in%20AWS%20Cloud.pdf",
-        linkText: "View project ↗"
+            "Developed and deployed a multi-tier web application using AWS cloud services.",
+        tags: ["AWS", "Cloud", "Web Development"],
+        file: "pdfs/Deployment%20of%20Multi-Tier%20Web%20Application%20in%20AWS%20Cloud.pdf"
     },
     {
         title: "Threat Modelling for LLM-Based Architecture",
         description:
-            "Analyzed threats, risks, and potential mitigations for an architecture based on large language models.",
+            "Analyzed threats, security risks, and mitigation approaches for an LLM-based architecture.",
         tags: ["Security", "Threat Modelling", "LLMs"],
-        filePath:
-            "pdfs/Threat%20Modelling%20and%20Risk%20Analysis%20for%20LLM-Based%20Architecture.htm",
-        linkText: "View project ↗"
+        file: "pdfs/Threat%20Modelling%20and%20Risk%20Analysis%20for%20LLM-Based%20Architecture.htm"
     },
     {
         title: "Text2Image Mobile Application",
         description:
-            "Worked on an AI-based mobile application that transforms text prompts into images.",
-        tags: ["AI", "Mobile Application"],
-        filePath: "pdfs/Text2Image%20Mobile%20Application.apk",
-        linkText: "View application ↗"
+            "Worked on an AI-based mobile application that generates images from text prompts.",
+        tags: ["AI", "Mobile Development"],
+        file: "pdfs/Text2Image%20Mobile%20Application.apk"
     },
     {
         title: "Software Maintainability and Quality Analysis",
         description:
-            "Applied the Goal-Question-Metric framework to examine software quality and maintainability.",
-        tags: ["Software Quality", "GQM"],
-        filePath:
-            "pdfs/Software%20Maintainability%20and%20Quality%20Analysis%20Using%20GQM%20Framework.pdf",
-        linkText: "View project ↗"
+            "Applied the Goal-Question-Metric framework to evaluate software quality and maintainability.",
+        tags: ["GQM", "Software Quality"],
+        file: "pdfs/Software%20Maintainability%20and%20Quality%20Analysis%20Using%20GQM%20Framework.pdf"
     },
     {
         title: "EV Charging Optimization",
         description:
             "Explored optimization approaches for electric vehicle charging.",
         tags: ["Optimization", "Python"],
-        filePath: "pdfs/EV%20Charging%20Optimization.pdf",
-        linkText: "View project ↗"
+        file: "pdfs/EV%20Charging%20Optimization.pdf"
     },
     {
         title: "Cryptocurrency Price Prediction",
         description:
-            "Analyzed cryptocurrency price data and explored machine learning approaches to price prediction.",
-        tags: ["Python", "Machine Learning", "Time Series"],
-        filePath: "pdfs/Bitcoin%20Price%20Prediction.pdf",
-        linkText: "View project ↗"
+            "Explored cryptocurrency price prediction using historical and high-frequency data.",
+        tags: ["Python", "Data Analysis"],
+        file: "pdfs/Bitcoin%20Price%20Prediction.pdf"
     },
     {
         title: "Indian Stock Market Trend Analysis",
         description:
-            "Explored financial data to analyze stock market trends.",
-        tags: ["Python", "Data Analysis"],
-        filePath: "pdfs/Indian%20Stock%20Market%20Trend%20Analysis.pdf",
-        linkText: "View project ↗"
+            "Analyzed stock market data to explore historical trends and patterns.",
+        tags: ["Python", "Finance", "Data Analysis"],
+        file: "pdfs/Indian%20Stock%20Market%20Trend%20Analysis.pdf"
     },
     {
         title: "Accident Severity Prediction",
         description:
-            "Used road accident data to explore factors associated with accident severity.",
-        tags: ["Python", "Data Science", "Classification"],
-        filePath: "pdfs/Accident%20Severity%20Prediction.pdf",
-        linkText: "View project ↗"
+            "Analyzed road accident data and explored machine learning classification methods.",
+        tags: ["Python", "Machine Learning"],
+        file: "pdfs/Accident%20Severity%20Prediction.pdf"
     },
     {
         title: "Wine Quality Classification",
         description:
-            "Applied classification techniques to investigate wine quality using data features.",
+            "Explored classification techniques for predicting wine quality from input features.",
         tags: ["Python", "Scikit-learn"],
-        filePath: "pdfs/Wine%20Quality%20Classification.pdf",
-        linkText: "View project ↗"
+        file: "pdfs/Wine%20Quality%20Classification.pdf"
     },
     {
         title: "Spam Detection",
         description:
-            "Explored text classification techniques for identifying spam messages.",
-        tags: ["Python", "NLP", "Classification"],
-        filePath: "pdfs/Spam%20Detection.pdf",
-        linkText: "View project ↗"
+            "Explored text classification methods for detecting spam messages.",
+        tags: ["Python", "Text Classification"],
+        file: "pdfs/Spam%20Detection.pdf"
     }
 ];
 
 
-// ---------- Display project cards ----------
+// ---------- Render projects ----------
 
 const projectList = document.getElementById("projectList");
 
 if (projectList) {
+    projectList.replaceChildren();
+
     projects.forEach((project, index) => {
         const card = document.createElement("article");
         card.className = "project-card";
@@ -150,16 +136,16 @@ if (projectList) {
         const tags = document.createElement("div");
         tags.className = "project-tags";
 
-        project.tags.forEach(tagName => {
+        project.tags.forEach(tagText => {
             const tag = document.createElement("span");
-            tag.textContent = tagName;
+            tag.textContent = tagText;
             tags.appendChild(tag);
         });
 
         const link = document.createElement("a");
         link.className = "project-link";
-        link.href = project.filePath;
-        link.textContent = project.linkText;
+        link.href = project.file;
+        link.textContent = "View project ↗";
         link.target = "_blank";
         link.rel = "noopener noreferrer";
 
@@ -169,7 +155,19 @@ if (projectList) {
 }
 
 
-// ---------- Current year in footer ----------
+// ---------- Glowing cursor follows mouse ----------
+
+const glowCursor = document.querySelector(".glow-cursor");
+
+if (glowCursor && window.matchMedia("(pointer: fine)").matches) {
+    document.addEventListener("mousemove", event => {
+        glowCursor.style.left = `${event.clientX - 12}px`;
+        glowCursor.style.top = `${event.clientY - 12}px`;
+    });
+}
+
+
+// ---------- Footer year ----------
 
 const currentYear = document.getElementById("currentYear");
 
