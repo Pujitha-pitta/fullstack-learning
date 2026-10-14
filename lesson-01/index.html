@@ -1,295 +1,162 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pujitha Pitta | Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Naga Pujitha Pitta, Computer Science graduate interested in software development and AI.">
+    <title>Naga Pujitha Pitta | Portfolio</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
-<header class="header">
-    <nav class="navbar">
-        <a class="logo" href="#home">P<span>.</span></a>
+<canvas id="particles"></canvas>
+<div class="cursor-glow" id="cursor-glow"></div>
 
-        <button class="menu-toggle" id="menu-toggle"
-                aria-label="Toggle navigation" aria-expanded="false">
-            ☰
-        </button>
+<header>
+    <a href="#home" class="site-name">Naga Pujitha Pitta</a>
+    <p class="typing" id="typing"></p>
 
-        <div class="nav-links" id="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#publications">Publications</a>
-            <a href="#contact" class="nav-contact">Contact ↗</a>
-        </div>
+    <nav>
+        <a href="#home">Home</a>
+        <span>•</span>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
     </nav>
 </header>
 
 <main>
-    <section class="hero" id="home">
-        <div class="hero-content reveal">
-            <p class="eyebrow"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</p>
+    <section id="home" class="page home-page">
+        <div class="intro">
+            <img src="images/profile.jpeg" alt="Pujitha's profile photo">
 
-            <h1>Building ideas<br>into <span>digital solutions.</span></h1>
-
-            <p class="hero-description">
-                Hi, I'm <strong>Naga Pujitha Pitta</strong>, a Computer Science
-                graduate passionate about software development, AI, and
-                creating technology that solves real-world problems.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="button button-primary">Explore my work ↗</a>
-                <a href="mailto:nagapujitha456@gmail.com"
-                   class="button button-secondary">Get in touch</a>
-            </div>
-
-            <div class="hero-socials">
-                <a href="https://github.com/Pujitha-pitta" target="_blank"
-                   rel="noopener noreferrer">GitHub ↗</a>
-                <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
-                   target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            </div>
-        </div>
-
-        <div class="hero-visual reveal">
-            <div class="image-frame">
-                <img src="images/profile.jpeg" alt="Portrait of Pujitha">
-            </div>
-            <div class="floating-card">
-                <span class="floating-icon">✳</span>
-                <div>
-                    <strong>Curious by nature</strong>
-                    <p>Always learning and building</p>
-                </div>
-            </div>
-            <span class="decor decor-one">✳</span>
-            <span class="decor decor-two">+</span>
-        </div>
-
-        <div class="hero-bottom">
-            <span>SCROLL TO EXPLORE</span>
-            <a href="#about" aria-label="Scroll to About">↓</a>
-        </div>
-    </section>
-
-    <section class="section about-section" id="about">
-        <div class="section-heading reveal">
-            <p class="eyebrow">01 / ABOUT ME</p>
-            <h2>Curiosity drives<br><span>my journey.</span></h2>
-        </div>
-
-        <div class="about-content reveal">
-            <p>
-                I completed my Master's degree in Computer Science at
-                Blekinge Institute of Technology, Sweden. I enjoy exploring
-                new technologies, solving technical problems, and turning
-                concepts into practical applications.
-            </p>
-            <p>
-                My experience spans machine learning, cloud applications,
-                programming, and data analysis. I'm continuing to strengthen
-                my software engineering and full-stack development skills.
-            </p>
-
-            <div class="about-facts">
-                <div>
-                    <span class="fact-number">01</span>
-                    <p>Learn continuously</p>
-                </div>
-                <div>
-                    <span class="fact-number">02</span>
-                    <p>Build thoughtfully</p>
-                </div>
-                <div>
-                    <span class="fact-number">03</span>
-                    <p>Solve real problems</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section skills-section" id="skills">
-        <div class="section-heading reveal">
-            <p class="eyebrow">02 / MY TOOLKIT</p>
-            <h2>Technologies I <span>work with.</span></h2>
-            <p class="section-description">
-                Tools and technologies I've used across my projects and studies.
-            </p>
-        </div>
-
-        <div class="skills-grid">
-            <article class="skill-card reveal">
-                <span class="skill-index">01</span>
-                <h3>Programming</h3>
-                <p>Python · Java · JavaScript · C/C++</p>
-            </article>
-            <article class="skill-card reveal">
-                <span class="skill-index">02</span>
-                <h3>Web Development</h3>
-                <p>HTML · CSS · JavaScript · Flask</p>
-            </article>
-            <article class="skill-card reveal">
-                <span class="skill-index">03</span>
-                <h3>Machine Learning</h3>
-                <p>Scikit-learn · TensorFlow · Keras</p>
-            </article>
-            <article class="skill-card reveal">
-                <span class="skill-index">04</span>
-                <h3>Data & Analytics</h3>
-                <p>SQL · Pandas · NumPy</p>
-            </article>
-            <article class="skill-card reveal">
-                <span class="skill-index">05</span>
-                <h3>Cloud Computing</h3>
-                <p>AWS EC2 · S3 · RDS</p>
-            </article>
-            <article class="skill-card reveal">
-                <span class="skill-index">06</span>
-                <h3>Tools</h3>
-                <p>Git · GitHub · Jupyter Notebook</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="section experience-section" id="experience">
-        <div class="section-heading reveal">
-            <p class="eyebrow">03 / EXPERIENCE</p>
-            <h2>Learning through <span>experience.</span></h2>
-        </div>
-
-        <div class="experience-list">
-            <article class="experience-item reveal">
-                <div class="experience-date">JUL — AUG 2026</div>
-                <div>
-                    <h3>AI Intern</h3>
-                    <p class="experience-company">FLY Rank AI · Sweden</p>
-                    <p>Worked on AI-related tasks and practical technical problem-solving.</p>
-                </div>
-                <span class="experience-arrow">↗</span>
-            </article>
-
-            <article class="experience-item reveal">
-                <div class="experience-date">MAY — JUN 2023</div>
-                <div>
-                    <h3>Python Programming Intern</h3>
-                    <p class="experience-company">AICTE</p>
-                    <p>Developed Python programming skills through internship work and exercises.</p>
-                </div>
-                <span class="experience-arrow">↗</span>
-            </article>
-        </div>
-    </section>
-
-    <section class="section projects-section" id="projects">
-        <div class="section-heading reveal">
-            <p class="eyebrow">04 / SELECTED WORK</p>
-            <h2>Projects that turn<br><span>ideas into reality.</span></h2>
-            <p class="section-description">
-                A selection of academic and technical projects I've worked on.
-            </p>
-        </div>
-
-        <div class="projects-grid">
-            <article class="project-card project-featured reveal">
-                <div class="project-topline">
-                    <span>01 / MACHINE LEARNING</span>
-                    <span class="project-symbol">↗</span>
-                </div>
-                <h3>Reliable Diabetes Prediction</h3>
+            <div class="intro-text">
+                <p>Hey — I'm Pujitha.</p>
                 <p>
-                    Compared centralized and federated learning models,
-                    probability calibration, and explainability for
-                    more trustworthy predictions.
+                    I completed my Master's degree in Computer Science at
+                    Blekinge Institute of Technology, Sweden.
                 </p>
-                <div class="project-tags">
-                    <span>Python</span><span>Federated Learning</span><span>SHAP</span>
-                </div>
-            </article>
-
-            <article class="project-card reveal">
-                <div class="project-topline">
-                    <span>02 / CLOUD</span>
-                    <span class="project-symbol">↗</span>
-                </div>
-                <h3>Multi-Tier AWS Application</h3>
-                <p>Designed and deployed a multi-tier web application using AWS services.</p>
-                <div class="project-tags">
-                    <span>AWS</span><span>Web Apps</span>
-                </div>
-            </article>
-
-            <article class="project-card reveal">
-                <div class="project-topline">
-                    <span>03 / ARTIFICIAL INTELLIGENCE</span>
-                    <span class="project-symbol">↗</span>
-                </div>
-                <h3>Text2Image Mobile App</h3>
-                <p>Explored an AI-based mobile application that generates images from text prompts.</p>
-                <div class="project-tags">
-                    <span>AI</span><span>Mobile</span>
-                </div>
-            </article>
-
-            <article class="project-card reveal">
-                <div class="project-topline">
-                    <span>04 / DATA SCIENCE</span>
-                    <span class="project-symbol">↗</span>
-                </div>
-                <h3>Cryptocurrency Price Prediction</h3>
-                <p>Investigated machine learning approaches for predicting cryptocurrency prices.</p>
-                <div class="project-tags">
-                    <span>Python</span><span>Data Analysis</span>
-                </div>
-            </article>
-
-            <article class="project-card reveal">
-                <div class="project-topline">
-                    <span>05 / PREDICTIVE ANALYTICS</span>
-                    <span class="project-symbol">↗</span>
-                </div>
-                <h3>Accident Severity Prediction</h3>
-                <p>Analyzed road accident data to study factors associated with accident severity.</p>
-                <div class="project-tags">
-                    <span>Machine Learning</span><span>Classification</span>
-                </div>
-            </article>
-
-            <article class="project-card reveal">
-                <div class="project-topline">
-                    <span>06 / SOFTWARE ENGINEERING</span>
-                    <span class="project-symbol">↗</span>
-                </div>
-                <h3>Software Quality Analysis</h3>
-                <p>Explored software maintainability and quality using the Goal-Question-Metric framework.</p>
-                <div class="project-tags">
-                    <span>Software Quality</span><span>GQM</span>
-                </div>
-            </article>
+                <p>
+                    I'm interested in software development, full-stack
+                    engineering, artificial intelligence, and machine learning.
+                </p>
+                <p class="highlight">
+                    Always learning. Always building.
+                </p>
+            </div>
         </div>
 
-        <p class="projects-note">
-            More projects and source code can be explored on my
-            <a href="https://github.com/Pujitha-pitta" target="_blank"
-               rel="noopener noreferrer">GitHub profile ↗</a>.
-        </p>
+        <div class="home-links">
+            <a href="mailto:nagapujitha456@gmail.com">Email Me</a>
+            <hr>
+            <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span>·</span>
+            <a href="https://github.com/Pujitha-pitta"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+            <hr>
+            <a href="#experience">‹ My Experience ›</a>
+        </div>
     </section>
 
-    <section class="section publications-section" id="publications">
-        <div class="section-heading reveal">
-            <p class="eyebrow">05 / RESEARCH</p>
-            <h2>Ideas backed by <span>research.</span></h2>
+    <section id="experience" class="page">
+        <h1>Experience</h1>
+        <a class="resume-link" href="mailto:nagapujitha456@gmail.com">
+            Get in touch
+        </a>
+
+        <div class="timeline">
+            <article>
+                <span class="timeline-dot"></span>
+                <h3>AI Intern</h3>
+                <p class="company">FLY Rank AI · Sweden</p>
+                <p class="date">July 2026 – August 2026</p>
+            </article>
+
+            <article>
+                <span class="timeline-dot"></span>
+                <h3>Python Programming Intern</h3>
+                <p class="company">AICTE</p>
+                <p class="date">May 2023 – June 2023</p>
+            </article>
         </div>
 
-        <article class="publication-card reveal">
-            <div class="publication-number">01</div>
-            <div class="publication-content">
-                <p class="publication-label">MACHINE LEARNING · RESEARCH</p>
+        <a class="next-link" href="#projects">‹ My Projects ›</a>
+    </section>
+
+    <section id="projects" class="page">
+        <h1>Projects</h1>
+        <p class="page-subtitle">Some things I've worked on.</p>
+
+        <div class="project-list">
+            <article>
+                <span>01</span>
+                <div>
+                    <h3>Federated Learning for Diabetes Prediction</h3>
+                    <p>
+                        Compared federated and centralized machine learning,
+                        probability calibration, and SHAP explainability.
+                    </p>
+                    <small>Python · Machine Learning · Federated Learning</small>
+                </div>
+            </article>
+
+            <article>
+                <span>02</span>
+                <div>
+                    <h3>Multi-Tier Web Application on AWS</h3>
+                    <p>Designed and deployed a multi-tier web application using cloud services.</p>
+                    <small>AWS · Cloud Computing · Web Development</small>
+                </div>
+            </article>
+
+            <article>
+                <span>03</span>
+                <div>
+                    <h3>Text2Image Mobile Application</h3>
+                    <p>Explored an AI-based application for generating images from text prompts.</p>
+                    <small>Artificial Intelligence · Mobile Application</small>
+                </div>
+            </article>
+
+            <article>
+                <span>04</span>
+                <div>
+                    <h3>Cryptocurrency Price Prediction</h3>
+                    <p>Explored data analysis and machine learning for cryptocurrency price prediction.</p>
+                    <small>Python · Data Science</small>
+                </div>
+            </article>
+
+            <article>
+                <span>05</span>
+                <div>
+                    <h3>Accident Severity Prediction</h3>
+                    <p>Analyzed road accident data to investigate accident severity.</p>
+                    <small>Python · Machine Learning</small>
+                </div>
+            </article>
+
+            <article>
+                <span>06</span>
+                <div>
+                    <h3>Software Maintainability and Quality Analysis</h3>
+                    <p>Applied the Goal-Question-Metric framework to software quality analysis.</p>
+                    <small>Software Engineering · GQM</small>
+                </div>
+            </article>
+        </div>
+
+        <a class="next-link" href="#publications">‹ My Publications ›</a>
+    </section>
+
+    <section id="publications" class="page">
+        <h1>Publications</h1>
+        <p class="page-subtitle">Research and academic work.</p>
+
+        <article class="publication">
+            <span>01</span>
+            <div>
                 <h3>A Federated Learning Approach for Reliable Diabetes Prediction</h3>
                 <p>
                     Comparative analysis of machine learning and deep learning
@@ -300,48 +167,36 @@
             </div>
         </article>
 
-        <article class="publication-card reveal">
-            <div class="publication-number">02</div>
-            <div class="publication-content">
-                <p class="publication-label">CREDIT SCORING · RESEARCH</p>
+        <article class="publication">
+            <span>02</span>
+            <div>
                 <h3>Analyzing Rule-Based Models in Personal Loan Credit Scoring</h3>
-                <p>
-                    Research exploring rule-based models in personal loan
-                    credit scoring.
-                </p>
+                <p>Research on rule-based models for personal loan credit scoring.</p>
                 <a href="Analyzing%20Rule-Based%20Models%20in%20Personal%20Loan%20Credit%20Scoring.pdf"
                    target="_blank" rel="noopener noreferrer">Read publication ↗</a>
             </div>
         </article>
+
+        <a class="next-link" href="#contact">‹ Contact Me ›</a>
     </section>
 
-    <section class="contact-section" id="contact">
-        <div class="contact-inner reveal">
-            <p class="eyebrow">06 / GET IN TOUCH</p>
-            <h2>Let's build something<br><span>meaningful.</span></h2>
-            <p>
-                Have an opportunity, an interesting idea, or just want to connect?
-                I'd love to hear from you.
-            </p>
-            <a class="button button-light" href="mailto:nagapujitha456@gmail.com">
-                Say hello ↗
-            </a>
-            <div class="contact-links">
-                <a href="https://github.com/Pujitha-pitta" target="_blank"
-                   rel="noopener noreferrer">GitHub ↗</a>
-                <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
-                   target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-                <a href="mailto:nagapujitha456@gmail.com">Email ↗</a>
-            </div>
-        </div>
+    <section id="contact" class="page contact-page">
+        <h1>Let's Connect</h1>
+        <p>Interested in working together or discussing technology?</p>
+        <p>
+            <a href="mailto:nagapujitha456@gmail.com">Email</a>
+            ·
+            <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            ·
+            <a href="https://github.com/Pujitha-pitta"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+        <a class="next-link" href="#home">↑ Back to Home</a>
     </section>
 </main>
 
-<footer class="footer">
-    <a class="logo" href="#home">P<span>.</span></a>
-    <p>Designed and built by Naga Pujitha Pitta · © 2026</p>
-    <a href="#home">Back to top ↑</a>
-</footer>
+<footer>Designed by Naga Pujitha Pitta · 2026</footer>
 
 <script src="script.js"></script>
 </body>
