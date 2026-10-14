@@ -4,201 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naga Pujitha Pitta | Portfolio</title>
+    <meta name="theme-color" content="#192127">
+    <title>Pujitha Pitta | Software Developer</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
-<canvas id="particles"></canvas>
-<div class="cursor-glow" id="cursor-glow"></div>
+    <div class="background-shapes" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
 
-<header>
-    <a href="#home" class="site-name">Naga Pujitha Pitta</a>
-    <p class="typing" id="typing"></p>
+    <header class="hero" id="home">
+        <h1>Naga Pujitha Pitta</h1>
+        <p class="typing">
+            <span id="roleText">Software Developer</span>
+            <span class="cursor">|</span>
+        </p>
 
-    <nav>
-        <a href="#home">Home</a>
-        <span>•</span>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-    </nav>
-</header>
+        <nav>
+            <a href="#home">Home</a>
+            <span>•</span>
+            <a href="#experience">Experience</a>
+            <span>•</span>
+            <a href="#projects">Projects</a>
+            <span>•</span>
+            <a href="#publications">Publications</a>
+        </nav>
+    </header>
 
-<main>
-    <section id="home" class="page home-page">
-        <div class="intro">
-            <img src="images/profile.jpeg" alt="Pujitha's profile photo">
+    <main>
+        <section class="intro">
+            <h2>Hey — I'm Pujitha.</h2>
 
-            <div class="intro-text">
-                <p>Hey — I'm Pujitha.</p>
+            <p>
+                I'm a Computer Science graduate interested in building
+                useful software, full-stack web applications, and AI-powered
+                solutions.
+            </p>
+
+            <p>
+                I have experience working with Python, machine learning,
+                cloud technologies, and software development. I'm currently
+                growing my skills in full-stack development.
+            </p>
+
+            <p>
+                I enjoy learning new technologies, solving problems,
+                and turning ideas into practical projects.
+            </p>
+
+            <div class="education">
+                <h3>Education</h3>
                 <p>
-                    I completed my Master's degree in Computer Science at
-                    Blekinge Institute of Technology, Sweden.
-                </p>
-                <p>
-                    I'm interested in software development, full-stack
-                    engineering, artificial intelligence, and machine learning.
-                </p>
-                <p class="highlight">
-                    Always learning. Always building.
+                    <strong>Master's in Computer Science</strong><br>
+                    Blekinge Institute of Technology, Sweden
                 </p>
             </div>
-        </div>
 
-        <div class="home-links">
-            <a href="mailto:nagapujitha456@gmail.com">Email Me</a>
             <hr>
-            <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
-               target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <span>·</span>
+
+            <div class="social-links">
+                <a href="mailto:nagapujitha456@gmail.com">Email</a>
+                <span>·</span>
+                <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
+                   target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <span>·</span>
+                <a href="https://github.com/Pujitha-pitta"
+                   target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+
+            <hr>
+
+            <a class="next-link" href="#experience">〈 My Experience 〉</a>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <p class="section-subtitle">My professional journey</p>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <h3>AI Intern</h3>
+                    <p class="company">FLY Rank AI · Sweden</p>
+                    <p>Worked on AI-related tasks and technical projects.</p>
+                    <p class="date">July 2026 – August 2026</p>
+                </article>
+
+                <article class="timeline-item">
+                    <h3>Python Programming Intern</h3>
+                    <p class="company">AICTE</p>
+                    <p>Developed programming skills using Python.</p>
+                    <p class="date">May 2023 – June 2023</p>
+                </article>
+            </div>
+
+            <hr>
+
+            <a class="next-link" href="#projects">〈 My Projects 〉</a>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p class="section-subtitle">
+                A selection of my academic and technical work
+            </p>
+
+            <div id="projectList" class="project-list"></div>
+
+            <hr>
+
+            <a class="next-link" href="#publications">
+                〈 My Publications 〉
+            </a>
+        </section>
+
+        <section id="publications" class="section">
+            <h2>Publications</h2>
+            <p class="section-subtitle">
+                Research contributions and academic work
+            </p>
+
+            <div class="publication-list">
+
+                <article class="publication-card">
+                    <span class="publication-number">01</span>
+
+                    <div class="publication-content">
+                        <h3>
+                            A Federated Learning Approach for Reliable
+                            Diabetes Prediction
+                        </h3>
+
+                        <p>
+                            Comparative analysis of machine learning and
+                            deep learning models with probability calibration.
+                            This research explores federated learning,
+                            predictive performance, model calibration,
+                            and explainability for reliable diabetes prediction.
+                        </p>
+
+                        <p class="publication-tags">
+                            Federated Learning · Machine Learning ·
+                            SHAP · Probability Calibration
+                        </p>
+
+                        <a href="Diabetes%20Prediction.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Read Publication ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="publication-card">
+                    <span class="publication-number">02</span>
+
+                    <div class="publication-content">
+                        <h3>
+                            Analyzing Rule-Based Models in Personal
+                            Loan Credit Scoring
+                        </h3>
+
+                        <p>
+                            Research exploring the use of rule-based models
+                            in personal loan credit scoring.
+                        </p>
+
+                        <p class="publication-tags">
+                            Rule-Based Models · Credit Scoring · Data Analysis
+                        </p>
+
+                        <a href="Analyzing%20Rule-Based%20Models%20in%20Personal%20Loan%20Credit%20Scoring.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Read Publication ↗
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <hr>
+
+            <a class="next-link" href="#home">〈 Back to Home 〉</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed and developed by Pujitha Pitta</p>
+        <p>
             <a href="https://github.com/Pujitha-pitta"
                target="_blank" rel="noopener noreferrer">GitHub</a>
-            <hr>
-            <a href="#experience">‹ My Experience ›</a>
-        </div>
-    </section>
-
-    <section id="experience" class="page">
-        <h1>Experience</h1>
-        <a class="resume-link" href="mailto:nagapujitha456@gmail.com">
-            Get in touch
-        </a>
-
-        <div class="timeline">
-            <article>
-                <span class="timeline-dot"></span>
-                <h3>AI Intern</h3>
-                <p class="company">FLY Rank AI · Sweden</p>
-                <p class="date">July 2026 – August 2026</p>
-            </article>
-
-            <article>
-                <span class="timeline-dot"></span>
-                <h3>Python Programming Intern</h3>
-                <p class="company">AICTE</p>
-                <p class="date">May 2023 – June 2023</p>
-            </article>
-        </div>
-
-        <a class="next-link" href="#projects">‹ My Projects ›</a>
-    </section>
-
-    <section id="projects" class="page">
-        <h1>Projects</h1>
-        <p class="page-subtitle">Some things I've worked on.</p>
-
-        <div class="project-list">
-            <article>
-                <span>01</span>
-                <div>
-                    <h3>Federated Learning for Diabetes Prediction</h3>
-                    <p>
-                        Compared federated and centralized machine learning,
-                        probability calibration, and SHAP explainability.
-                    </p>
-                    <small>Python · Machine Learning · Federated Learning</small>
-                </div>
-            </article>
-
-            <article>
-                <span>02</span>
-                <div>
-                    <h3>Multi-Tier Web Application on AWS</h3>
-                    <p>Designed and deployed a multi-tier web application using cloud services.</p>
-                    <small>AWS · Cloud Computing · Web Development</small>
-                </div>
-            </article>
-
-            <article>
-                <span>03</span>
-                <div>
-                    <h3>Text2Image Mobile Application</h3>
-                    <p>Explored an AI-based application for generating images from text prompts.</p>
-                    <small>Artificial Intelligence · Mobile Application</small>
-                </div>
-            </article>
-
-            <article>
-                <span>04</span>
-                <div>
-                    <h3>Cryptocurrency Price Prediction</h3>
-                    <p>Explored data analysis and machine learning for cryptocurrency price prediction.</p>
-                    <small>Python · Data Science</small>
-                </div>
-            </article>
-
-            <article>
-                <span>05</span>
-                <div>
-                    <h3>Accident Severity Prediction</h3>
-                    <p>Analyzed road accident data to investigate accident severity.</p>
-                    <small>Python · Machine Learning</small>
-                </div>
-            </article>
-
-            <article>
-                <span>06</span>
-                <div>
-                    <h3>Software Maintainability and Quality Analysis</h3>
-                    <p>Applied the Goal-Question-Metric framework to software quality analysis.</p>
-                    <small>Software Engineering · GQM</small>
-                </div>
-            </article>
-        </div>
-
-        <a class="next-link" href="#publications">‹ My Publications ›</a>
-    </section>
-
-    <section id="publications" class="page">
-        <h1>Publications</h1>
-        <p class="page-subtitle">Research and academic work.</p>
-
-        <article class="publication">
-            <span>01</span>
-            <div>
-                <h3>A Federated Learning Approach for Reliable Diabetes Prediction</h3>
-                <p>
-                    Comparative analysis of machine learning and deep learning
-                    models with probability calibration.
-                </p>
-                <a href="Diabetes%20Prediction.pdf" target="_blank"
-                   rel="noopener noreferrer">Read document ↗</a>
-            </div>
-        </article>
-
-        <article class="publication">
-            <span>02</span>
-            <div>
-                <h3>Analyzing Rule-Based Models in Personal Loan Credit Scoring</h3>
-                <p>Research on rule-based models for personal loan credit scoring.</p>
-                <a href="Analyzing%20Rule-Based%20Models%20in%20Personal%20Loan%20Credit%20Scoring.pdf"
-                   target="_blank" rel="noopener noreferrer">Read publication ↗</a>
-            </div>
-        </article>
-
-        <a class="next-link" href="#contact">‹ Contact Me ›</a>
-    </section>
-
-    <section id="contact" class="page contact-page">
-        <h1>Let's Connect</h1>
-        <p>Interested in working together or discussing technology?</p>
-        <p>
+            ·
             <a href="mailto:nagapujitha456@gmail.com">Email</a>
             ·
-            <a href="https://linkedin.com/in/naga-pujitha-pitta-bb8784255"
-               target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            ·
-            <a href="https://github.com/Pujitha-pitta"
-               target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#publications">Publications</a>
         </p>
-        <a class="next-link" href="#home">↑ Back to Home</a>
-    </section>
-</main>
+    </footer>
 
-<footer>Designed by Naga Pujitha Pitta · 2026</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 ```
